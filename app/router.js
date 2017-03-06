@@ -7,12 +7,19 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about');
 });
 
 export default Router; // makes the Router var available to other parts of app
 
 
 /**
+
+A route is composed of three parts:
+  1. /app/router.js maps the route name to a specific url
+  2. a route handler javascript file instructs which behavior should be executed when the route is loaded
+     (app/router.js)
+  3. a route template describing the page represented by the route
 
 Ember CLI uses ECMAScript 2015
 
